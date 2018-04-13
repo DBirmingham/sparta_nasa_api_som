@@ -21,6 +21,22 @@ class LookupService
 	def get_ast_name
 		@asteroid_data["name"]
 	end
+
+	def get_jpl_url
+		@asteroid_data["neo_reference_id"]
+	end
+
+	def get_abs_mag_h
+		@asteroid_data["absolute_magnitude_h"]
+	end
+
+	def get_est_diam
+		@asteroid_data["estimated_diameter"]
+	end
+
+	def diam_keys
+		@asteroid_data["estimated_diameter"].keys
+	end
 end
 
 # var = LookupService.new
