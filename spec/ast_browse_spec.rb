@@ -9,7 +9,37 @@ describe 'Asteroid browse' do
 			@browse_data.browse
 		end
 
-		it 'should have a links hash with the '
+		it 'should have a links hash' do
+			expect(@browse_data.get_links).to be_a Hash
+		end
+
+		it 'should have a page data hash' do
+			expect(@browse_data.get_page_data).to be_a Hash
+		end
+
+		it 'should return the page size as an integer' do
+			expect(@browse_data.page_size).to be_a Integer
+		end
+
+		it 'should return the number of page elements as an integer' do
+			expect(@browse_data.element_count).to be_a Integer
+		end
+
+		it 'should return the number of total pages as an integer' do
+			expect(@browse_data.page_count).to be_a Integer
+		end
+
+		it 'should return the page number as an integer' do
+			expect(@browse_data.page_no).to be_a Integer
+		end
+
+		it 'should return a list of @browse_data.page_size near earth objects in an array' do
+			expect(@browse_data.neo_count).to eq @browse_data.page_size
+		end
+
+		it 'should have a links hash assigned to a near earth objects' do
+			expect(@browse_data.neo_link).to be_a Hash
+		end
 
 		it 'should return a name as a string' do
 			expect(@browse_data.get_ast_name).to be_a String

@@ -18,36 +18,68 @@ class BrowseService
 		@browse_data["links"]
 	end
 
+	def get_page_data
+		@browse_data["page"]
+	end
+
+	def page_size
+		get_page_data["size"]
+	end
+
+	def element_count
+		get_page_data["total_elements"]
+	end
+
+	def page_count
+		get_page_data["total_pages"]
+	end
+
+	def page_no
+		get_page_data["number"]
+	end
+
+	def neo1
+		@browse_data["near_earth_objects"][0]
+	end
+
+	def neo_count
+		@browse_data["near_earth_objects"].count
+	end
+
+	def neo_link
+		neo1["links"]
+	end
+
 	def get_ref_id
-		@browse_data["neo_reference_id"]
+		neo1["neo_reference_id"]
 	end
 
 	def get_ast_name
-		@browse_data["name"]
+		neo1["name"]
 	end
 
 	def get_jpl_url
-		@browse_data["neo_reference_id"]
+		neo1["neo_reference_id"]
 	end
 
 	def get_abs_mag_h
-		@browse_data["absolute_magnitude_h"]
+		neo1["absolute_magnitude_h"]
 	end
 
 	def get_est_diam
-		@browse_data["estimated_diameter"]
+		neo1["estimated_diameter"]
 	end
 
 	def diam_keys
-		@browse_data["estimated_diameter"].keys
+		neo1["estimated_diameter"].keys
 	end
 
 	def danger?
-		@browse_data["is_potentially_hazardous_asteroid"]
+		neo1["is_potentially_hazardous_asteroid"]
 	end
 
 	def close_approach
-		@browse_data["close_approach_data"]
+		neo1["close_approach_data"]
 	end
 
 	def close_approach_date
@@ -87,7 +119,7 @@ class BrowseService
 	end
 
 	def orbital_data
-		@browse_data["orbital_data"]
+		neo1["orbital_data"]
 	end
 
 	def orbit_id
