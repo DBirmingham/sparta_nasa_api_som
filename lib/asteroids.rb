@@ -7,8 +7,8 @@ class NasaAst
 		LookupService.new
 	end
 
-	def feed_service
-		FeedService.new
+	def feed_service start_date, end_date
+		FeedService.new start_date, end_date
 	end
 
 	def browse_service

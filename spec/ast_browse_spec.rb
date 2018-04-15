@@ -29,6 +29,10 @@ describe 'Asteroid browse' do
 			expect(@browse_data.page_count).to be_a Integer
 		end
 
+		it 'should return the neo reference id as a string' do
+			expect(@browse_data.get_ref_id).to be_a String
+		end
+
 		it 'should return the page number as an integer' do
 			expect(@browse_data.page_no).to be_a Integer
 		end
