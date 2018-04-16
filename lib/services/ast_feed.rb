@@ -1,5 +1,6 @@
 require 'httparty'
 require 'json'
+require 'dotenv/load'
 
 class FeedService
 	include HTTParty
@@ -7,7 +8,7 @@ class FeedService
 	base_uri 'https://api.nasa.gov/neo/rest/v1/'
 
 	def initialize start_date, end_date
-		@api_key = 'ftpSYA2QnXH4DeMWUki7eQSmbAP93HAfm2Lvzzx3'
+		@api_key = ENV['NASA_SOM_API_KEY']
 		@start_date = start_date
 		@end_date = end_date
 	end

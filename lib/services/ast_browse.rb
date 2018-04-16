@@ -1,5 +1,6 @@
 require 'httparty'
 require 'json'
+require 'dotenv/load'
 
 class BrowseService
 	include HTTParty
@@ -7,7 +8,7 @@ class BrowseService
 	base_uri 'https://api.nasa.gov/neo/rest/v1/neo/browse'
 
 	def initialize
-		@api_key = 'ftpSYA2QnXH4DeMWUki7eQSmbAP93HAfm2Lvzzx3'
+		@api_key = ENV['NASA_SOM_API_KEY']
 	end
 
 	def browse
