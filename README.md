@@ -1,10 +1,10 @@
 # sparta_nasa_api_som
 
-A weekend project which involved writing test scripts for the 3 main features of NASA's Near Earth Object API. Overall an exercise in practicing test driven development and improving our understanding of Ruby.
+A weekend project which involved writing test scripts for the 3 main features of [NASA's Near Earth Object API](https://api.nasa.gov/api.html#NeoWS). Overall an exercise in practicing test driven development and improving our understanding of Ruby.
 
 ## Getting Started
 
-Clone the sparta_nasa_api_som folder to your personal computer to begin looking at the test files. Apply for a NASA API key [here](https://api.nasa.gov/api.html#NeoWS). With the dotenv gem create your own .env file containing an API key, if unsure follow the links provided detailing usage of dotenv.
+Clone the sparta_nasa_api_som folder to your personal computer to begin looking at the test files. Apply for a NASA API key [here](https://api.nasa.gov/index.html#apply-for-an-api-key). With the dotenv gem create your own .env file containing an API key, if unsure follow the links provided detailing usage of dotenv.
 
 ### Prerequisites
 
