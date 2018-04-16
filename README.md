@@ -11,7 +11,7 @@ Clone the sparta_nasa_api_som folder to your personal computer to begin looking 
 This was done in Ruby 2.4.0 older versions may not be compatible. see here for instructions on updating your Ruby version (on Mac)
 
 Necessary Gems
-* [httparty](https://github.com/jnunemaker/httparty) - used for api access
+* [httparty](https://github.com/jnunemaker/httparty) - used for API access
 * [JSON](https://github.com/flori/json) - used to parse JSON data received from the API
 * [dotenv](https://github.com/bkeepers/dotenv) - used to easily load variables from a .env file. An easy to understand walkthrough of setting up your first .env variable can be found [here](https://github.com/codeunion/dotenv-example)
 
