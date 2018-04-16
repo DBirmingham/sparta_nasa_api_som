@@ -4,7 +4,7 @@ A weekend project which involved writing test scripts for the 3 main features of
 
 ## Getting Started
 
-Clone the sparta_nasa_api_som folder to your personal computer to begin looking at the test files.
+Clone the sparta_nasa_api_som folder to your personal computer to begin looking at the test files. Apply for a NASA API key [here](https://api.nasa.gov/api.html#NeoWS). With the dotenv gem create your own .env file containing an API key, if unsure follow the links provided detailing usage of dotenv.
 
 ### Prerequisites
 
@@ -13,6 +13,7 @@ This was done in Ruby 2.4.0 older versions may not be compatible. see here for i
 Necessary Gems
 * [httparty](https://github.com/jnunemaker/httparty) - used for api access
 * [JSON](https://github.com/flori/json) - used to parse JSON data received from the API
+* [dotenv](https://github.com/bkeepers/dotenv) - used to easily load variables from a .env file. An easy to understand walkthrough of setting up your first .env variable can be found [here](https://github.com/codeunion/dotenv-example)
 
 ## Running the Tests
 
@@ -36,4 +37,4 @@ as we have in all examples here, a spec folder will be created. The rspec comman
 
 ## Built With
 
-Ruby, httpary, JSON and rspec!
+Ruby, httpary, JSON, dotenv and rspec!
